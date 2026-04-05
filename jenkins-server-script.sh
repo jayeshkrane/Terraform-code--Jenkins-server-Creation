@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# install jenkins
+#install jenkins
+
 sudo yum update –y
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -10,7 +11,6 @@ sudo yum install java-17-amazon-corretto -y
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
-
 
 # install git
 sudo yum install git -y
